@@ -12,6 +12,7 @@ var AppComponent = (function () {
         this.xlevel = 1;
         this.xcurrent = 25;
         this.xtotal = 100;
+        this.progress = 75;
     }
     return AppComponent;
 }());

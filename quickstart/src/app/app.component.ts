@@ -9,5 +9,6 @@ export class AppComponent  {
 	userBro = 'TAD';
 	xlevel = 1;
 	xcurrent = 25;
-	xtotal = 100; 
+	xtotal = 100;
+	progress = 75; 
 }
