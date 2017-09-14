@@ -1,0 +1,23 @@
+#everything{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Gadget, sans-serif;
+}
+
+#header{
+  width: 100%;
+}
+#header td{
+	border: none;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#drive {
+  font-size: 100px;
+  font-style: bold;
+}
