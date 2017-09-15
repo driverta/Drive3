@@ -1,0 +1,20 @@
+<span class="label">Ordered By: {{orderByField2}}, Reverse Sort: {{reverseSort2}}</span><br>	
+<div>
+	<div>
+		<table class="cable">
+			<tr>
+				<th>Reps</th>
+				<th>Weight</th>
+				<th>1RM</th>
+				<th>Records</th>
+			</tr>
+			<tr ng-repeat="x in stack|orderBy:orderByField2:reverseSort2" ng-class="{red: x.records == 0, green: x.records > 0, silver: x.records == 4, gold: x.records > 4}">
+				<td style="font-weight:bold">{{x.reps}}</td>
+				<td >{{x.weight}}</td>
+				<td >{{x.oneRM}}</td>
+				<td >{{x.records}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="fart" id="stackwork"></div>

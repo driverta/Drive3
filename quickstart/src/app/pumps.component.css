@@ -1,0 +1,15 @@
+.cable {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.cable, td, th {
+  
+  padding: 5px;
+}
+
+.cable th {
+  color: white;
+}

@@ -1,0 +1,100 @@
+.tabs {
+  font-size: 0;
+  text-align: center;
+}
+
+.tabs:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.tabs .tab {
+  display: inline;
+}
+
+.tabs .tab-label {
+  background: #eee; 
+  border: 1px solid #ccc; 
+  display: inline-block;
+  font-size: 15px;
+  left: 1px;
+  margin-left: -1px;
+  padding: 6px; 
+  position: relative;
+  vertical-align: bottom;
+  color: black;
+}
+
+.tabs .tab > [type="radio"] {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  opacity: 0;
+  position: fixed;
+  width: 1px;
+  z-index: -1;
+}
+
+.tabs .tab-panel {
+  display: inline;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  width: 0;
+}
+
+.tabs .tab-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background: white;
+  padding: 0 20px;
+  float: left;
+  font-size: 1rem;
+  margin-top: -1px;
+  width: 100%;
+  background-color: black;
+}
+
+.tabs .tab [type="radio"]:checked + .tab-label {
+  background: red;
+  color: white;
+  border-bottom-width: 0;
+  padding-bottom: 11px;
+  z-index: 1;
+}
+
+.tabs .tab [type="radio"]:checked ~ .tab-panel {
+  display: inline;
+}
+
+#table-wrapper {
+  position:relative;
+}
+
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+
+.cable {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.cable, td, th {
+  
+  padding: 5px;
+}
+
+.cable th {
+  color: white;
+}

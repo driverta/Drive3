@@ -1,0 +1,16 @@
+<span class="label">Ordered By: {{orderByField3}}, Reverse Sort: {{reverseSort2}}</span><br>
+<table class="cable">
+	<tr>
+		<th>Weight</th>
+		<th>Reps</th>
+		<th>1RM</th>
+		<th>Records</th>
+	</tr>
+	<tr ng-repeat="x in pump|orderBy:orderByField3:reverseSort2" ng-class="{red: x.records == 0, green: x.records > 0, silver: x.records == 4, gold: x.records > 4}">
+		<td style="font-weight:bold">{{x.weight}}</td>
+		<td >{{x.reps}}</td>
+		<td >{{x.oneRM}}</td>
+		<td >{{x.records}}</td>
+	</tr>
+</table>
+<div class="fart" id="pumpwork"></div>

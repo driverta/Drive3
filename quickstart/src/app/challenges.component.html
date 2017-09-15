@@ -1,0 +1,13 @@
+<span class="label">Ordered By: {{orderByField4}}, Reverse Sort: {{reverseSort2}}</span><br>
+<table class="cable">
+	<tr>
+		<th>Number</th>
+		<th>Challenge</th>
+		<th>Status</th>
+	</tr>
+	<tr ng-repeat="x in challenge|orderBy:orderByField4:reverseSort2 track by $index" ng-class="{green: x.challenge == 'Complete!!', red: x.challenge != 'Complete!!'}">
+		<td>{{x.num}}</td>
+		<td >{{x.title}}</td>
+		<td >{{x.challenge}}</td>
+	</tr>
+</table>

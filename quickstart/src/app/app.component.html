@@ -1,19 +1,18 @@
-<div id="everything">	
-	<table id="header">
-		<tr>
-			<th>
-				<div id="drive">
-					<div id="title">D R I V E</div>
-					<div id="userBro2">{{userBro}}</div>
-				</div>
-			</th>
-		</tr>
-		<tr>
-			<td id="points">LEVEL <span class="sick"> {{xlevel}}</span> : <span class="sick">{{xcurrent}}</span> / <span class="sick">{{xtotal}}</span> GAINS</td>
-		</tr>
-	</table>
+<table id="header">
+	<tr>
+		<th>
+			<div id="drive">
+				<div id="title">D R I V E</div>
+				<div id="userBro2">{{userBro}}</div>
+			</div>
+		</th>
+	</tr>
+	<tr>
+		<td id="points">LEVEL <span class="sick"> {{xlevel}}</span> : <span class="sick">{{xcurrent}}</span> / <span class="sick">{{xtotal}}</span> GAINS</td>
+	</tr>
+</table>
 
-	<div id="myProgress">
-			<div id="myBar" [ngStyle]="{'width.%' : progress}"></div>
-	</div>
+<div id="myProgress">
+		<div id="myBar" [ngStyle]="{'width.%' : progress}"></div>
 </div>
+<my-tabs></my-tabs>
